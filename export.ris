@@ -1,0 +1,590 @@
+TY  - JOUR
+AB  - COVID-19 is a contagious disease caused by SARS-CoV-2 infection. Chest X-ray (CXR) imaging provides a faster alternative for COVID-19 screening. However, manual interpretation is subjective and prone to errors. Deep learning models can automate COVID-19 detection with high accuracy. This study proposes an ensemble model combining ResNet50 and MobileNetV2. ResNet50 extracts deep hierarchical features for precise classification. MobileNetV2 enhances efficiency while maintaining strong performance. A segmentation step isolates lung regions to improve feature extraction. Grad-CAM enhances explainability by highlighting infection-prone areas. The dataset includes CXR images from the COVID-19 Radiography Database. Images were split 80:10:10 for training, validation, and testing with stratified sampling. The ensemble model integrates feature fusion for improved classification. The model was optimized using Adam optimizer (learning rate: 0.0001, β1 = 0.9, β2 = 0.999) for 10 epochs with early stopping (patience = 3, monitoring validation loss). Performance evaluation considers accuracy, sensitivity, specificity. Using stratified fivefold cross-validation the model achieved 97.55% accuracy, precision of 97.2%, F1-score of 97.4% and AUC-ROC of 0.989 in differentiating COVID-19 from normal cases. Grad-CAM heatmaps confirm the model's focus on infection regions. Infection severity is quantified using lung segmentation and Gradient-weighted Class Activation Mapping (Grad-CAM) overlays. Higher severity scores correspond to severe lung involvement in patients. The proposed method enhances COVID-19 detection and interpretability.
+AU  - Javitha, A. Anix Mary
+AU  - Livinsa, Z. Mary
+DO  - 10.1007/s40009-026-02251-2
+KW  - COVID-19
+KW  - Chest X-ray
+KW  - Deep learning
+KW  - Explainability
+KW  - Grad-CAM
+KW  - MobileNetV2
+KW  - ResNet50
+KW  - Segmentation
+PB  - Springer
+PY  - 2026
+TI  - CORE-MONET: A Multi-Stage Ensemble Deep Learning Framework for Automated COVID-19 Detection and Explainable Lung Infection Severity Assessment from Chest X-rays
+T2  - National Academy Science Letters
+ER  -
+TY  - JOUR
+AB  - The Corona Virus was first started in the Wuhan city, China in December of 2019. It belongs to the Coronaviridae family, which can infect both animals and humans. The diagnosis of coronavirus disease-2019 (COVID-19) is typically detected by Serology, Genetic Real-Time reverse transcription–Polymerase Chain Reaction (RT-PCR), and Antigen testing. These testing methods have limitations like limited sensitivity, high cost, and long turn-around time. It is necessary to develop an automatic detection system for COVID-19 prediction. Chest X-ray is a lower-cost process in comparison to chest Computed tomography (CT). Deep learning is the best fruitful technique of machine learning, which provides useful investigation for learning and screening a large amount of chest X-ray images with COVID-19 and normal. There are many deep learning methods for prediction, but these methods have a few limitations like overfitting, misclassification, and false predictions for poor-quality chest X-rays. In order to overcome these limitations, the novel hybrid model called “Inception V3 with VGG16 (Visual Geometry Group)” is proposed for the prediction of COVID-19 using chest X-rays. It is a combination of two deep learning models, Inception V3 and VGG16 (IV3-VGG). To build the hybrid model, collected 243 images from the COVID-19 Radiography Database. Out of 243 X-rays, 121 are COVID-19 positive and 122 are normal images. The hybrid model is divided into two modules namely pre-processing and the IV3-VGG. In the dataset, some of the images with different sizes and different color intensities are identified and pre-processed. The second module i.e., IV3-VGG consists of four blocks. The first block is considered for VGG-16 and blocks 2 and 3 are considered for Inception V3 networks and final block 4 consists of four layers namely Avg pooling, dropout, fully connected, and Softmax layers. The experimental results show that the IV3-VGG model achieves the highest accuracy of 98% compared to the existing five prominent deep learning models such as Inception V3, VGG16, ResNet50, DenseNet121, and MobileNet.
+AU  - Srinivas, K.
+AU  - Gagana Sri, R.
+AU  - Pravallika, K.
+AU  - Nishitha, K.
+AU  - Polamuri, Subba Rao
+DA  - 2024/4//
+DO  - 10.1007/s11042-023-15903-y
+IS  - 12
+KW  - COVID-19
+KW  - Chest X-ray
+KW  - Corona virus
+KW  - DenseNet121
+KW  - IV3-VGG
+KW  - Inception V3
+KW  - MobileNet
+KW  - RT-PCR
+KW  - ResNet50
+KW  - VGG16
+PB  - Springer
+PY  - 2024
+SP  - 36665
+EP  - 36682
+TI  - COVID-19 prediction based on hybrid Inception V3 with VGG16 using chest X-ray images
+T2  - Multimedia Tools and Applications
+VL  - 83
+ER  -
+TY  - JOUR
+AB  - The COVID-19 pandemic has wreaked havoc on the whole world, taking over half a million lives and capsizing the world economy in unprecedented magnitudes. With the world scampering for a possible vaccine, early detection and containment are the only redress. Existing diagnostic technologies with high accuracy like RT-PCRs are expensive and sophisticated, requiring skilled individuals for specimen collection and screening, resulting in lower outreach. So, methods excluding direct human intervention are much sought after, and artificial intelligence-driven automated diagnosis, especially with radiography images, captured the researchers’ interest. This survey marks a detailed inspection of the deep learning–based automated detection of COVID-19 works done to date, a comparison of the available datasets, methodical challenges like imbalanced datasets and others, along with probable solutions with different preprocessing methods, and scopes of future exploration in this arena. We also benchmarked the performance of 315 deep models in diagnosing COVID-19, normal, and pneumonia from X-ray images of a custom dataset created from four others. The dataset is publicly available at https://github.com/rgbnihal2/COVID-19-X-ray-Dataset. Our results show that DenseNet201 model with Quadratic SVM classifier performs the best (accuracy: 98.16%, sensitivity: 98.93%, specificity: 98.77%) and maintains high accuracies in other similar architectures as well. This proves that even though radiography images might not be conclusive for radiologists, but it is so for deep learning algorithms for detecting COVID-19. We hope this extensive review will provide a comprehensive guideline for researchers in this field.
+AU  - Rahman, Sejuti
+AU  - Sarker, Sujan
+AU  - Miraj, Md Abdullah Al
+AU  - Nihal, Ragib Amin
+AU  - Nadimul Haque, A. K.M.
+AU  - Noman, Abdullah Al
+DA  - 2024/7//
+DO  - 10.1007/s12559-020-09779-5
+IS  - 4
+KW  - Automated detection
+KW  - COVID-19
+KW  - Deep learning
+KW  - Medical imaging
+KW  - Radiography
+KW  - SARS-CoV-2
+PB  - Springer
+PY  - 2024
+SP  - 1735
+EP  - 1764
+TI  - Deep Learning–Driven Automated Detection of COVID-19 from Radiography Images: a Comparative Analysis
+T2  - Cognitive Computation
+VL  - 16
+ER  -
+TY  - JOUR
+AB  - Developing computer-aided diagnosis systems that balance accuracy and efficiency remains a challenge in COVID-19 and respiratory disease classification. To develop effective lightweight models, we investigated various optimization strategies, including the convolutional block attention module, depthwise separable convolutions, global average pooling, residual connections, and knowledge distillation. Leveraging these optimization strategies, we introduce two models, LitCovNet 1 and LitCovNet 2, and evaluate them on the COVID-19 Radiography Database and COVID-QU-Ex datasets. LitCovNet 2 achieves 98.78% accuracy on the Radiography Database and 95.64% on COVID-QU-Ex with only 67,349 parameters, while LitCovNet 1 attains 95.70% on COVID-QU-Ex with 131,861 parameters. Despite being 350 smaller than ResNet50, LitCovNet 2 shows comparable accuracy and markedly superior FLOPs, model size, and inference speed. This makes it a perfect candidate for resource-constrained deployment. Benchmarking on multiple edge devices further demonstrates their suitability for resource-constrained deployment. These results establish LitCovNet as an effective lightweight solution for large-scale multiclass COVID-19 and respiratory disease classification.
+AU  - Hossain, Md Yearat
+AU  - Rakib, Md Mahbub Hasan
+AU  - Rahman, Rashedur M.
+DA  - 2026/1//
+DO  - 10.1007/s42979-025-04637-3
+IS  - 1
+KW  - Covid-19 classification
+KW  - Deep learning
+KW  - Efficient deep learning
+KW  - Optimized neural networks
+KW  - X-ray Imaging
+PB  - Springer
+PY  - 2026
+TI  - LitCovNet: Attention-Based Lightweight Convolutional Network for Covid and Lung Disease Classification from Chest X-ray Images
+T2  - SN Computer Science
+VL  - 7
+ER  -
+TY  - CONF
+AB  - Large-scale pre-trained Vision-Language Models (VLMs), such as BiomedCLIP, have demonstrated promising potential for biological image classification. However, effectively adapting these large pre-trained VLMs to specialized diagnostic tasks remains challenging due to the scarcity of annotated datasets and the prohibitive computational costs associated with full-model fine-tuning. Prompt engineering, which aims to rapidly adapt pre-trained models on small-scale, task-specific datasets, has emerged as a widely adopted alternative. Nevertheless, current prompt engineering methodologies lack standardization. To address this limitation, this work proposes a novel diagnostic axis framework. It standardizes prompts to systematically capture clinically relevant features while accounting for model sensitivity to stylistic prompt variations. This approach enhances both task adaptation and prompt interpretability for downstream diagnostic applications. On the COVID-19 Radiography Database, the model fine-tuned under the proposed framework achieved a 20.33% improvement in Accuracy compared to the baseline model. Experimental results demonstrate that models fine-tuned using diagnostic axes significantly outperformed zero-shot baseline models across most evaluation metrics on a COVID-19 screening task. Despite these promising results, this study has several limitations, such as insufficient exploration of interactions among different prompt styles and limited support for complex reasoning tasks. Future research could further incorporate potential interactions and extend support for multi-step reasoning to improve the generalizability and practical utility of the method.
+AU  - He, Aochen
+DO  - 10.1109/CCNIS69465.2025.00044
+KW  - BiomedCLIP
+KW  - COVID-19
+KW  - Prompt Engineering
+PB  - Institute of Electrical and Electronics Engineers Inc.
+PY  - 2025
+SN  - 9798331572471
+SP  - 221
+EP  - 225
+TI  - Prompt Engineering in Fine-Tuning BiomedCLIP to Enhance COVID-19 Chest X-Ray Diagnosis
+T2  - Proceedings - 2nd International Conference on Computer Communication, Networks and Information Science, CCNIS 2025
+ER  -
+TY  - JOUR
+AB  - In recent years, large-kernel Convolutional Neural Networks (CNNs) have received significant attention in the classification of COVID-19 X-ray images. However, there are still unresolved issues. Existing large-kernel convolutional neural networks tend to overly emphasize local perceptual abilities, while the question of whether these networks possess strong general perceptual ability at multiple scales in the visual domain requires further exploration. Additionally, current neural network architecture designs primarily focus on spatial feature extraction from static images and have limited capability to understand temporal dynamic information in image sequences. To overcome these challenges, we introduce TMscNet, a tailored deep learning model for COVID-19 X-ray image classification. TMscNet introduces a new convolutional structure called DiverseConvBlock on top of the ConvNeXt network. It employs a novel self-tuning algorithm to fuse feature maps generated from convolutions with different kernel sizes. Furthermore, we employ Global Response Normalization to concurrently capture contextual and global image features, thus enhancing scale-based feature perception and extraction efficiency. Additionally, we introduce the Temporal Convolutional Network (TCN) to enable better capture and utilization of dynamic information in image sequences by leveraging its efficiency in handling long-term dependencies. Our model achieves high accuracy, specificity, and sensitivity on the publicly accessible Chest X-Ray Dataset and COVID-19 Radiography Database. In the classification of the first dataset, our model demonstrated an accuracy of 98.14%, a specificity of 98.79%, and a sensitivity of 98.29%. Upon validating with the second dataset, it achieved an accuracy of 98.05%, with specificity and sensitivity reaching 99.01% and 98.12%, respectively.These impressive results confirm the outstanding performance of our proposed network in COVID-19 and pneumonia image classification tasks.
+AU  - Wang, Xicheng
+AU  - Zhang, Shuai
+AU  - Wei, Dejian
+AU  - Zhang, Junzhong
+AU  - Cao, Hui
+DA  - 2025/10//
+DO  - 10.1007/s13042-025-02664-3
+IS  - 10
+KW  - COVID-19 X-ray image
+KW  - Deep Learning
+KW  - Global Information
+KW  - Multiple Scales
+KW  - Temporal Information
+PB  - Springer Science and Business Media Deutschland GmbH
+PY  - 2025
+SP  - 7449
+EP  - 7466
+TI  - TMscNet: a model with multiple information interaction for COVID-19 X-ray classification
+T2  - International Journal of Machine Learning and Cybernetics
+VL  - 16
+ER  -
+TY  - JOUR
+AB  - In the health domain, due to privacy issues, many important datasets are isolated, which nonetheless need to be analyzed collaboratively for conclusions to be drawn efficiently. To maintain data privacy, federated learning (FL) trains a communal model from scattered datasets without centralized data integration. In this paper, we compare and analyze the performance of traditional deep learning (DL) and FL techniques using the chest X-Ray (CXR) image dataset for COVID-19 detection. We first implemented DL techniques VGG-16, ResNet50, and Inceptionv3, where ResNet50 is found to be best on the classification task with 98% accuracy. We then proposed FL implementations - federated averaging and federated learning using ResNet50 for training local and global models. The proposed FL converges faster and outperforms the base FL for both independent and identically distributed (IID) and non-IID datasets. While the FL handles bigger data efficiently, compared to DL, it compromised 3.56% in accuracy to preserve privacy. Our results provide a platform for the further investigation of FL in COVID-19 detection.
+AU  - Naz, Sadaf
+AU  - Phan, Khoa
+AU  - Chen, Yi Ping Phoebe
+DO  - 10.1109/TETCI.2024.3371222
+IS  - 4
+KW  - COVID-19
+KW  - Chest X-ray
+KW  - deep learning
+KW  - federated learning
+KW  - heterogeneity
+KW  - privacy-preserving
+PB  - Institute of Electrical and Electronics Engineers Inc.
+PY  - 2024
+SP  - 2987
+EP  - 3000
+TI  - Centralized and Federated Learning for COVID-19 Detection With Chest X-Ray Images: Implementations and Analysis
+T2  - IEEE Transactions on Emerging Topics in Computational Intelligence
+VL  - 8
+ER  -
+TY  - CONF
+AU  - Rudolfo, Anthony Gilles
+AU  - Araki, Joceline
+AU  - Santoso Gunawan, Alexander Agung
+AU  - Chandra Pradana, Rilo
+DA  - 2026/1//
+DO  - 10.1109/icaifi66942.2025.11326406
+PB  - Institute of Electrical and Electronics Engineers (IEEE)
+PY  - 2026
+SN  - 9798331556068
+SP  - 1
+EP  - 6
+TI  - Addressing Class Imbalance in COVID-19 Chest X-Ray Classification via Data Augmentation and Focal Loss
+ER  -
+TY  - JOUR
+AB  - Computer-aided diagnosis for the reliable and fast detection of coronavirus disease (COVID-19) has become a necessity to prevent the spread of the virus during the pandemic to ease the burden on the healthcare system. Chest X-ray (CXR) imaging has several advantages over other imaging and detection techniques. Numerous works have been reported on COVID-19 detection from a smaller set of original X-ray images. However, the effect of image enhancement and lung segmentation of a large dataset in COVID-19 detection was not reported in the literature. We have compiled a large X-ray dataset (COVQU) consisting of 18,479 CXR images with 8851 normal, 6012 non-COVID lung infections, and 3616 COVID-19 CXR images and their corresponding ground truth lung masks. To the best of our knowledge, this is the largest public COVID positive database and the lung masks. Five different image enhancement techniques: histogram equalization (HE), contrast limited adaptive histogram equalization (CLAHE), image complement, gamma correction, and balance contrast enhancement technique (BCET) were used to investigate the effect of image enhancement techniques on COVID-19 detection. A novel U-Net model was proposed and compared with the standard U-Net model for lung segmentation. Six different pre-trained Convolutional Neural Networks (CNNs) (ResNet18, ResNet50, ResNet101, InceptionV3, DenseNet201, and ChexNet) and a shallow CNN model were investigated on the plain and segmented lung CXR images. The novel U-Net model showed an accuracy, Intersection over Union (IoU), and Dice coefficient of 98.63%, 94.3%, and 96.94%, respectively for lung segmentation. The gamma correction-based enhancement technique outperforms other techniques in detecting COVID-19 from the plain and the segmented lung CXR images. Classification performance from plain CXR images is slightly better than the segmented lung CXR images; however, the reliability of network performance is significantly improved for the segmented lung images, which was observed using the visualization technique. The accuracy, precision, sensitivity, F1-score, and specificity were 95.11%, 94.55%, 94.56%, 94.53%, and 95.59% respectively for the segmented lung images. The proposed approach with very reliable and comparable performance will boost the fast and robust COVID-19 detection using chest X-ray images.
+AU  - Rahman, Tawsifur
+AU  - Khandakar, Amith
+AU  - Qiblawey, Yazan
+AU  - Tahir, Anas
+AU  - Kiranyaz, Serkan
+AU  - Abul Kashem, Saad Bin
+AU  - Islam, Mohammad Tariqul
+AU  - Al Maadeed, Somaya
+AU  - Zughaier, Susu M.
+AU  - Khan, Muhammad Salman
+AU  - Chowdhury, Muhammad E.H.
+DA  - 2021/5//
+DO  - 10.1016/j.compbiomed.2021.104319
+KW  - COVID-19
+KW  - Chest X-ray images
+KW  - Convolutional neural networks
+KW  - Image enhancement
+KW  - Lung segmentation
+PB  - Elsevier Ltd
+PY  - 2021
+TI  - Exploring the effect of image enhancement techniques on COVID-19 detection using chest X-ray images
+T2  - Computers in Biology and Medicine
+VL  - 132
+ER  -
+TY  - JOUR
+AB  - Chest X-ray is the first imaging technique that plays an important role in the diagnosis of COVID-19 disease. Due to the high availability of large-scale annotated image datasets, great success has been achieved using convolutional neural networks (CNN s) for image recognition and classification. However, due to the limited availability of annotated medical images, the classification of medical images remains the biggest challenge in medical diagnosis. Thanks to transfer learning, an effective mechanism that can provide a promising solution by transferring knowledge from generic object recognition tasks to domain-specific tasks. In this paper, we validate and a deep CNN, called Decompose, Transfer, and Compose (DeTraC), for the classification of COVID-19 chest X-ray images. DeTraC can deal with any irregularities in the image dataset by investigating its class boundaries using a class decomposition mechanism. The experimental results showed the capability of DeTraC in the detection of COVID-19 cases from a comprehensive image dataset collected from several hospitals around the world. High accuracy of 93.1% (with a sensitivity of 100%) was achieved by DeTraC in the detection of COVID-19 X-ray images from normal, and severe acute respiratory syndrome cases.
+AU  - Abbas, Asmaa
+AU  - Abdelsamea, Mohammed M.
+AU  - Gaber, Mohamed Medhat
+DA  - 2021/2//
+DO  - 10.1007/s10489-020-01829-7
+IS  - 2
+KW  - COVID-19 detection
+KW  - Chest X-ray images
+KW  - Covolutional neural networks
+KW  - Data irregularities
+KW  - DeTraC
+PB  - Springer
+PY  - 2021
+SP  - 854
+EP  - 864
+TI  - Classification of COVID-19 in chest X-ray images using DeTraC deep convolutional neural network
+T2  - Applied Intelligence
+VL  - 51
+ER  -
+TY  - JOUR
+AB  - The Coronavirus disease 2019 (COVID-19) is the fastest transmittable virus caused by severe acute respiratory syndrome Coronavirus 2 (SARS-CoV-2). The detection of COVID-19 using artificial intelligence techniques and especially deep learning will help to detect this virus in early stages which will reflect in increasing the opportunities of fast recovery of patients worldwide. This will lead to release the pressure off the healthcare system around the world. In this research, classical data augmentation techniques along with Conditional Generative Adversarial Nets (CGAN) based on a deep transfer learning model for COVID-19 detection in chest CT scan images will be presented. The limited benchmark datasets for COVID-19 especially in chest CT images are the main motivation of this research. The main idea is to collect all the possible images for COVID-19 that exists until the very writing of this research and use the classical data augmentations along with CGAN to generate more images to help in the detection of the COVID-19. In this study, five different deep convolutional neural network-based models (AlexNet, VGGNet16, VGGNet19, GoogleNet, and ResNet50) have been selected for the investigation to detect the Coronavirus-infected patient using chest CT radiographs digital images. The classical data augmentations along with CGAN improve the performance of classification in all selected deep transfer models. The outcomes show that ResNet50 is the most appropriate deep learning model to detect the COVID-19 from limited chest CT dataset using the classical data augmentation with testing accuracy of 82.91%, sensitivity 77.66%, and specificity of 87.62%.
+AU  - Loey, Mohamed
+AU  - Manogaran, Gunasekaran
+AU  - Khalifa, Nour Eldeen M.
+DA  - 2025/12//
+DO  - 10.1007/s00521-020-05437-x
+IS  - 35-36
+KW  - CGAN
+KW  - COVID-19
+KW  - Deep transfer learning
+KW  - SARS-CoV-2
+PB  - Springer Science and Business Media Deutschland GmbH
+PY  - 2025
+SP  - 29099
+EP  - 29111
+TI  - A deep transfer learning model with classical data augmentation and CGAN to detect COVID-19 from chest CT radiography digital images
+T2  - Neural Computing and Applications
+VL  - 37
+ER  -
+TY  - JOUR
+AB  - The novel coronavirus, also known as COVID-19, is a pandemic that has weighed heavily on the socio-economic affairs of the world. Research into the production of relevant vaccines is progressively being advanced with the development of the Pfizer and BioNTech, AstraZeneca, Moderna, Sputnik V, Janssen, Sinopharm, Valneva, Novavax and Sanofi Pasteur vaccines. There is, however, a need for a computational intelligence solution approach to mediate the process of facilitating quick detection of the disease. Different computational intelligence methods, which comprise natural language processing, knowledge engineering, and deep learning, have been proposed in the literature to tackle the spread of coronavirus disease. More so, the application of deep learning models have demonstrated an impressive performance compared to other methods. This paper aims to advance the application of deep learning and image pre-processing techniques to characterise and detect novel coronavirus infection. Furthermore, the study proposes a framework named CovFrameNet., which consist of a pipelined image pre-processing method and a deep learning model for feature extraction, classification, and performance measurement. The novelty of this study lies in the design of a CNN architecture that incorporates an enhanced image pre-processing mechanism. The National Institutes of Health (NIH) Chest X-Ray dataset and COVID-19 Radiography database were used to evaluate and validate the effectiveness of the proposed deep learning model. Results obtained revealed that the proposed model achieved an accuracy of 0.1, recall/precision of 0.85, F-measure of 0.9, and specificity of 1.0. Thus, the study's outcome showed that a CNN-based method with image pre-processing capability could be adopted for the pre-screening of suspected COVID-19 cases, and the confirmation of RT-PCR-based detected cases of COVID-19.
+AU  - Oyelade, Olaide Nathaniel
+AU  - Ezugwu, Absalom El Shamir
+AU  - Chiroma, Haruna
+DO  - 10.1109/ACCESS.2021.3083516
+KW  - CNN
+KW  - COVID-19
+KW  - Image pre-processing
+KW  - X-Ray
+KW  - convolutional neural network
+KW  - coronavirus
+KW  - deep learning
+KW  - machine learning
+PB  - Institute of Electrical and Electronics Engineers Inc.
+PY  - 2021
+SP  - 77905
+EP  - 77919
+TI  - CovFrameNet: An Enhanced Deep Learning Framework for COVID-19 Detection
+T2  - IEEE Access
+VL  - 9
+ER  -
+TY  - JOUR
+AB  - The outbreak of novel coronavirus (COVID-19) disease has infected more than 135.6 million people globally. For its early diagnosis, researchers consider chest X-ray examinations as a standard screening technique in addition to RT-PCR test. Majority of research work till date focused only on application of deep learning approaches that is relevant but lacking in better pre-processing of CXR images. Towards this direction, this study aims to explore cumulative effects of image denoising and enhancement approaches on the performance of deep learning approaches. Regarding pre-processing, suitable methods for X-ray images, Histogram equalization, CLAHE and gamma correction have been tested individually and along with adaptive median filter, median filter, total variation filter and gaussian denoising filters. Proposed study compared eleven combinations in exploration of most coherent approach in greedy manner. For more robust analysis, we compared ten CNN architectures for performance evaluation with and without enhancement approaches. These models are InceptionV3, InceptionResNetV2, MobileNet, MobileNetV2, Vgg19, NASNetMobile, ResNet101, DenseNet121, DenseNet169, DenseNet201. These models are trained in 4-way (COVID-19 pneumonia vs Viral vs Bacterial pneumonia vs Normal) and 3-way classification scenario (COVID-19 vs Pneumonia vs Normal) on two benchmark datasets. The proposed methodology determines with TVF + Gamma, models achieve higher classification accuracy and sensitivity. In 4-way classification MobileNet with TVF + Gamma achieves top accuracy of 93.25% with 1.91% improvement in accuracy score, COVID-19 sensitivity of 98.72% and F1-score of 92.14%. In 3-way classification our DenseNet201 with TVF + Gamma gains accuracy of 91.10% with improvement of 1.47%, COVID-19 sensitivity of 100% and F1-score of 91.09%. Proposed study concludes that deep learning modes with gamma correction and TVF + Gamma has superior performance compared to state-of-the-art models. This not only minimizes overlapping between COVID-19 and virus pneumonia but advantageous in time required to converge best possible results.
+AU  - Sharma, Ajay
+AU  - Mishra, Pramod Kumar
+DA  - 2022/12//
+DO  - 10.1007/s11042-022-13486-8
+IS  - 29
+KW  - COVID-19 analysis
+KW  - Chest X-ray
+KW  - Deep learning
+KW  - Image denoising
+KW  - Image enhancement
+KW  - Pneumonia classification
+PB  - Springer
+PY  - 2022
+SP  - 42649
+EP  - 42690
+TI  - Image enhancement techniques on deep learning approaches for automated diagnosis of COVID-19 features using CXR images
+T2  - Multimedia Tools and Applications
+VL  - 81
+ER  -
+TY  - JOUR
+AB  - Coronavirus disease (COVID-19) is a pandemic disease, which has already caused thousands of causalities and infected several millions of people worldwide. Any technological tool enabling rapid screening of the COVID-19 infection with high accuracy can be crucially helpful to the healthcare professionals. The main clinical tool currently in use for the diagnosis of COVID-19 is the Reverse transcription polymerase chain reaction (RT-PCR), which is expensive, less-sensitive and requires specialized medical personnel. X-ray imaging is an easily accessible tool that can be an excellent alternative in the COVID-19 diagnosis. This research was taken to investigate the utility of artificial intelligence (AI) in the rapid and accurate detection of COVID-19 from chest X-ray images. The aim of this paper is to propose a robust technique for automatic detection of COVID-19 pneumonia from digital chest X-ray images applying pre-trained deep-learning algorithms while maximizing the detection accuracy. A public database was created by the authors combining several public databases and also by collecting images from recently published articles. The database contains a mixture of 423 COVID-19, 1485 viral pneumonia, and 1579 normal chest X-ray images. Transfer learning technique was used with the help of image augmentation to train and validate several pre-trained deep Convolutional Neural Networks (CNNs). The networks were trained to classify two different schemes: i) normal and COVID-19 pneumonia; ii) normal, viral and COVID-19 pneumonia with and without image augmentation. The classification accuracy, precision, sensitivity, and specificity for both the schemes were 99.7%, 99.7%, 99.7% and 99.55% and 97.9%, 97.95%, 97.9%, and 98.8%, respectively. The high accuracy of this computer-aided diagnostic tool can significantly improve the speed and accuracy of COVID-19 diagnosis. This would be extremely useful in this pandemic where disease burden and need for preventive measures are at odds with available resources.
+AU  - Chowdhury, Muhammad E.H.
+AU  - Rahman, Tawsifur
+AU  - Khandakar, Amith
+AU  - Mazhar, Rashid
+AU  - Kadir, Muhammad Abdul
+AU  - Mahbub, Zaid Bin
+AU  - Islam, Khandakar Reajul
+AU  - Khan, Muhammad Salman
+AU  - Iqbal, Atif
+AU  - Emadi, Nasser Al
+AU  - Reaz, Mamun Bin Ibne
+AU  - Islam, Mohammad Tariqul
+DO  - 10.1109/ACCESS.2020.3010287
+KW  - Artificial intelligence
+KW  - COVID-19 pneumonia
+KW  - computer-aided diagnostic tool
+KW  - machine learning
+KW  - transfer learning
+KW  - viral pneumonia
+PB  - Institute of Electrical and Electronics Engineers Inc.
+PY  - 2020
+SP  - 132665
+EP  - 132676
+TI  - Can AI Help in Screening Viral and COVID-19 Pneumonia?
+T2  - IEEE Access
+VL  - 8
+ER  -
+TY  - JOUR
+AB  - Computer-aided diagnosis (CAD) methods such as Chest X-rays (CXR)-based method is one of the cheapest alternative options to diagnose the early stage of COVID-19 disease compared to other alternatives such as Polymerase Chain Reaction (PCR), Computed Tomography (CT) scan, and so on. To this end, there have been few works proposed to diagnose COVID-19 by using CXR-based methods. However, they have limited performance as they ignore the spatial relationships between the region of interests (ROIs) in CXR images, which could identify the likely regions of COVID-19’s effect in the human lungs. In this paper, we propose a novel attention-based deep learning model using the attention module with VGG-16. By using the attention module, we capture the spatial relationship between the ROIs in CXR images. In the meantime, by using an appropriate convolution layer (4th pooling layer) of the VGG-16 model in addition to the attention module, we design a novel deep learning model to perform fine-tuning in the classification process. To evaluate the performance of our method, we conduct extensive experiments by using three COVID-19 CXR image datasets. The experiment and analysis demonstrate the stable and promising performance of our proposed method compared to the state-of-the-art methods. The promising classification performance of our proposed method indicates that it is suitable for CXR image classification in COVID-19 diagnosis.
+AU  - Sitaula, Chiranjibi
+AU  - Hossain, Mohammad Belayet
+DA  - 2021/5//
+DO  - 10.1007/s10489-020-02055-x
+IS  - 5
+KW  - COVID-19
+KW  - Chest x-rays
+KW  - Classification
+KW  - Deep learning
+KW  - SARS-CoV2
+PB  - Springer
+PY  - 2021
+SP  - 2850
+EP  - 2863
+TI  - Attention-based VGG-16 model for COVID-19 chest X-ray image classification
+T2  - Applied Intelligence
+VL  - 51
+ER  -
+TY  - JOUR
+AB  - COVID-19 has had a profound impact on global health, targeting the human respiratory system and causing significant disruptions to human life. To aid in effective diagnosis and classification, numerous machine learning and deep learning models have been developed to analyse limited Chest Radiographic and Computed Tomography images. In this study, we propose a three-layer stacked multimodal approach for deep feature extraction from a high volume of COVID-19 Chest Radiographic images. The proposed model utilizes eight transfer learning models pre-trained on the ImageNet dataset, evaluated based on key performance metrics such as accuracy, precision, and recall. The unique stacking model integrates the outputs of these transfer learning models, extracting deep features through a three-layer architecture. These features are flattened, concatenated, and passed through seven deep dense layers with varying kernel and bias dimensions to achieve optimal classification performance. The approach was applied to a large COVID-19 Chest Radiographic images dataset, achieving the highest accuracy (95.79%), precision (95.44%), and recall (96.65%) when compared to state-of-the-art models. This study demonstrates the effectiveness of leveraging a stacked transfer learning multimodal framework for COVID-19 diagnosis. The proposed method not only ensures high accuracy but also provides a computationally efficient solution for analysing large-scale radiographic datasets, positioning it as a robust tool for aiding in the early detection and classification of COVID-19.
+AU  - Kaushik, Baijnath
+AU  - Chadha, Akshma
+AU  - Mahajan, Abhigya
+AU  - Ashok, Malvika
+DA  - 2025/5//
+DO  - 10.1016/j.engappai.2025.110241
+KW  - Artificial intelligence
+KW  - COVID19
+KW  - Classification
+KW  - Computed Tomography
+KW  - Stacking model
+KW  - Transfer learning models
+PB  - Elsevier Ltd
+PY  - 2025
+TI  - A three layer stacked multimodel transfer learning approach for deep feature extraction from Chest Radiographic images for the classification of COVID-19
+T2  - Engineering Applications of Artificial Intelligence
+VL  - 147
+ER  -
+TY  - JOUR
+AB  - COVID-19 detection and classification using chest X-ray images is a current hot research topic based on the important application known as medical image analysis. To halt the spread of COVID-19, it is critical to identify the infection as soon as possible. Due to time constraints and the expertise of radiologists, manually diagnosing this infection from chest X-ray images is a difficult and time-consuming process. Artificial intelligence techniques have had a significant impact on medical image analysis and have also introduced several techniques for COVID-19 diagnosis. Deep learning and explainable AI have shown significant popularity among AL techniques for COVID-19 detection and classification. In this work, we propose a deep learning and explainable AI technique for the diagnosis and classification of COVID-19 using chest X-ray images. Initially, a hybrid contrast enhancement technique is proposed and applied to the original images that are later utilized for the training of two modified deep learning models. The deep transfer learning concept is selected for the training of pretrained modified models that are later employed for feature extraction. Features of both deep models are fused using improved canonical correlation analysis that is further optimized using a hybrid algorithm named Whale-Elephant Herding. Through this algorithm, the best features are selected and classified using an extreme learning machine (ELM). Moreover, the modified deep models are utilized for Grad-CAM visualization. The experimental process was conducted on three publicly available datasets and achieved accuracies of 99.1, 98.2, and 96.7%, respectively. Moreover, the ablation study was performed and showed that the proposed accuracy is better than the other methods.
+AU  - Khan, Muhammad Attique
+AU  - Azhar, Marium
+AU  - Ibrar, Kainat
+AU  - Alqahtani, Abdullah
+AU  - Alsubai, Shtwai
+AU  - Binbusayyis, Adel
+AU  - Kim, Ye Jin
+AU  - Chang, Byoungchol
+DO  - 10.1155/2022/4254631
+PB  - Hindawi Limited
+PY  - 2022
+TI  - COVID-19 Classification from Chest X-Ray Images: A Framework of Deep Explainable Artificial Intelligence
+T2  - Computational Intelligence and Neuroscience
+VL  - 2022
+ER  -
+TY  - JOUR
+AB  - The COVID-19 pandemic has significantly strained healthcare systems, highlighting the need for early diagnosis to isolate positive cases and prevent the spread. This study combines machine learning, deep learning, and transfer learning techniques to automatically diagnose COVID-19 and other pulmonary conditions from radiographic images. First, we used Convolutional Neural Networks (CNNs) and a Support Vector Machine (SVM) classifier on a dataset of 21,165 chest X-ray images. Our model achieved an accuracy of 86.18 %. This approach aids medical experts in rapidly and accurateky detecting lung diseases. Next, we applied transfer learning using ResNet18 combined with SVM on a dataset comprising normal, COVID-19, lung opacity, and viral pneumonia images. This model outperformed traditional methods, with classification rates of 98 % with Stochastic Gradient Descent (SGD), 97 % with Adam, 96 % with RMSProp, and 94 % with Adagrad optimizers. Additionally, we incorporated two additional transfer learning models, EfficientNet-CNN and Xception-CNN, which achieved classification accuracies of 99.20 % and 98.80 %, respectively. However, we observed limitations in dataset diversity and representativeness, which may affect model generalization. Future work will focus on implementing advanced data augmentation techniques and collaborations with medical experts to enhance model performance.This research demonstrates the potential of cutting-edge deep learning techniques to improve diagnostic accuracy and efficiency in medical imaging applications.
+AU  - Lamouadene, Hajar
+AU  - EL Kassaoui, Majid
+AU  - El Yadari, Mourad
+AU  - El Kenz, Abdallah
+AU  - Benyoussef, Abdelilah
+AU  - El Moutaouakil, Amine
+AU  - Mounkachi, Omar
+DA  - 2025/6//
+DO  - 10.1016/j.compbiomed.2025.110131
+KW  - Automatic detection
+KW  - CNN
+KW  - COVID-19
+KW  - Deep and machine learning
+KW  - Lung diseases
+KW  - Optimization functions
+KW  - Radiographic images
+KW  - SVM
+KW  - X-ray images
+PB  - Elsevier Ltd
+PY  - 2025
+TI  - Detection of COVID-19, lung opacity, and viral pneumonia via X-ray using machine learning and deep learning
+T2  - Computers in Biology and Medicine
+VL  - 191
+ER  -
+TY  - JOUR
+AB  - The SARS-CoV-2 pandemic has underscored the need for robust and interpretable computer-aided diagnostic systems in radiological imaging. In this work, we present a hybrid deep learning architecture that integrates Convolutional Neural Networks (CNNs) with Transformer modules to improve COVID-19 detection from chest radiographs. The proposed model combines DenseNet121 for hierarchical feature extraction with Vision Transformer (ViT) components to capture long-range dependencies in medical images. Experimental evaluation on the publicly available COVID-19 Radiography Database (hosted on Kaggle and Mendeley) demonstrates an accuracy of 89.39%, along with high sensitivity and specificity on the test set. To ensure clinical relevance and interpretability, a multi-modal explainability framework comprising Grad-CAM, SHAP, and Layer-wise Relevance Propagation (LRP) was employed. The generated saliency maps showed strong alignment with radiologist-annotated regions of interest (ROIs), validating the model’s decisions. Comparative analysis with state-of-the-art models such as ResNet-50, standalone DenseNet-121, and ViT revealed that our hybrid approach achieves statistically significant improvements across diagnostic performance metrics. Moreover, the model exhibits reduced computational complexity and real-time inference capability, making it suitable for deployment in resource-constrained clinical settings. This research contributes a high-performing and explainable framework for medical image classification, with promising applications in automated screening and diagnosis of respiratory diseases, including COVID-19.
+AU  - Aravinda, C. V.
+AU  - Arjun, B. C.
+AU  - Khan, Mohamed Samiulla
+AU  - John, Santhosh
+AU  - Hussain, Shaik Asif
+DA  - 2025/12//
+DO  - 10.1007/s13721-025-00596-0
+IS  - 1
+KW  - COVID-19
+KW  - Computer-Aided Diagnosis
+KW  - Convolutional Neural Networks
+KW  - Deep Learning
+KW  - Explainable AI
+KW  - Medical Imaging
+KW  - Vision Transformers
+PB  - Springer
+PY  - 2025
+TI  - Explainable AI hybrid CNN-transformer models for enhanced COVID-19 detection in chest X-rays
+T2  - Network Modeling Analysis in Health Informatics and Bioinformatics
+VL  - 14
+ER  -
+TY  - JOUR
+AB  - The global COVID-19 pandemic has drastically affected daily life, emphasizing the urgent need for early and accurate detection to provide adequate medical treatment, especially with limited antiviral options. Chest X-ray imaging has proven crucial for distinguishing COVID-19 from other respiratory conditions, providing an essential diagnostic tool. Deep learning (DL)-based models have proven highly effective in image diagnostics in recent years. Many of these models are computationally intensive and prone to overfitting, especially when trained on limited datasets. Additionally, conventional models often fail to capture multi-scale features, reducing diagnostic accuracy. This paper proposed a highly efficient convolutional neural network (CNN) called EffiCOVID-Net, incorporating diverse feature learning units. The proposed model consists of a bunch of EffiCOVID blocks that incorporate several layers of convolution containing (3×3) filters and recurrent connections to extract complex features while preserving spatial integrity. The performance of EffiCOVID-Net is rigorously evaluated using standard performance metrics on two publicly available COVID-19 chest X-ray datasets. Experimental results demonstrate that EffiCOVID-Net outperforms existing models, achieving 98.68% accuracy on the COVID-19 radiography dataset (D1), 98.55% on the curated chest X-ray dataset (D2), and 98.87% on the mixed dataset (DMix) in multi-class classification (COVID-19 vs. Normal vs. Pneumonia). For binary classification (COVID-19 vs. Normal), the model attains 99.06%, 99.78%, and 99.07% accuracy, respectively. Integrating Grad-CAM-based visualizations further enhances interpretability by highlighting critical regions influencing model predictions. EffiCOVID-Net's lightweight architecture ensures low computational overhead, making it suitable for deployment in resource-constrained clinical settings. A comparative analysis with existing methods highlights its superior accuracy, efficiency, and robustness performance. However, while the model enhances diagnostic workflows, it is best utilized as an assistive tool rather than a standalone diagnostic method.
+AU  - Kumar, Sunil
+AU  - Bhowmik, Biswajit
+DA  - 2025/8//
+DO  - 10.1016/j.ymeth.2025.04.008
+KW  - Artificial intelligence
+KW  - CNN
+KW  - COVID-19 detection
+KW  - Deep learning
+KW  - Image classification
+KW  - Multi-scale features
+KW  - X-ray images
+PB  - Academic Press Inc.
+PY  - 2025
+SP  - 81
+EP  - 100
+TI  - EffiCOVID-net: A highly efficient convolutional neural network for COVID-19 diagnosis using chest X-ray imaging
+T2  - Methods
+VL  - 240
+ER  -
+TY  - JOUR
+AB  - This study presents a graphene metasurface-based surface plasmon resonance biosensor for rapid and sensitive detection of SARS-CoV-2. The sensor design incorporates four identical circular resonators coated with graphene monolayer on a SiO₂ substrate, operating in the terahertz frequency range of 0.6–1.4 THz. The sensor demonstrates a quality factor of 7.028 and sensitivity of 400 GHzRIU−1, with optimal performance observed at 1.002–1.004 THz. Electromagnetic simulations using COMSOL Multiphysics exemplifies the sensor’s response to variations in graphene chemical potential, angle of incidence, and resonator dimensions. The detection capability is enhanced through machine learning optimization utilizing 1D Convolutional Neural Networks, achieving perfect R2 scores of 100% under specific operational parameters. The proposed sensor offers a promising platform for rapid, sensitive, and reliable COVID-19 detection, particularly suitable for point-of-care applications in resource-limited settings.
+AU  - Wekalao, Jacob
+DA  - 2025/1//
+DO  - 10.1007/s11468-025-02885-w
+KW  - Biosensor
+KW  - Electromagnetic simulation
+KW  - Neural networks
+KW  - Point-of-care diagnostics
+KW  - SARS-CoV-2
+KW  - Terahertz sensing
+PB  - Springer
+PY  - 2025
+TI  - Graphene Metasurface-Based Surface Plasmon Resonance Biosensor for Rapid COVID-19 Detection with Machine Learning Optimization
+T2  - Plasmonics
+ER  -
+TY  - JOUR
+AB  - The year 2020 will certainly be remembered in human history as the year in which humans faced a global pandemic that drastically affected every living soul on planet earth. The COVID-19 pandemic certainly had a massive impact on human’s social and daily lives. The economy and relations of all countries were also radically impacted. Due to such unexpected situations, healthcare systems either collapsed or failed under colossal pressure to cope with the overwhelming numbers of patients arriving at emergency rooms and intensive care units. The COVID -19 tests used for diagnosis were expensive, slow, and gave indecisive results. Unfortunately, such a hindered diagnosis of the infection prevented abrupt isolation of the infected people which, in turn, caused the rapid spread of the virus. In this paper, we proposed the use of cost-effective X-ray images in diagnosing COVID-19 patients. Compared to other imaging modalities, X-ray imaging is available in most healthcare units. Deep learning was used for feature extraction and classification by implementing a multi-stream convolutional neural network model. The model extracts and concatenates features from its three inputs, namely; grayscale, local binary patterns, and histograms of oriented gradients images. Extensive experiments using fivefold cross-validation were carried out on a publicly available X-ray database with 3886 images of three classes. Obtained results outperform the results of other algorithms with an accuracy of 97.76%. The results also show that the proposed model can make a significant contribution to the rapidly increasing workload in health systems with an artificial intelligence-based automatic diagnosis tool.
+AU  - Bayram, Fatih
+AU  - Eleyan, Alaa
+DA  - 2022/9//
+DO  - 10.1007/s11760-021-02098-8
+IS  - 6
+KW  - COVID-19
+KW  - Chest X-ray
+KW  - Classification
+KW  - Convolutional neural network
+KW  - Feature fusion
+PB  - Springer Science and Business Media Deutschland GmbH
+PY  - 2022
+SP  - 1455
+EP  - 1462
+TI  - COVID-19 detection on chest radiographs using feature fusion based deep learning
+T2  - Signal, Image and Video Processing
+VL  - 16
+ER  -
+TY  - JOUR
+AB  - The chest X-ray is considered a significant clinical utility for basic examination and diagnosis. The human lung area can be affected by various infections, such as bacteria and viruses, leading to pneumonia. Efficient and reliable classification method facilities the diagnosis of such infections. Deep transfer learning has been introduced for pneumonia detection from chest X-rays in different models. However, there is still a need for further improvements in the feature extraction and advanced classification stages. This paper proposes a classification method with two stages to classify different cases from the chest X-ray images based on a proposed Advanced Squirrel Search Optimization Algorithm (ASSOA). The first stage is the feature learning and extraction processes based on a Convolutional Neural Network (CNN) model named ResNet-50 with image augmentation and dropout processes. The ASSOA algorithm is then applied to the extracted features for the feature selection process. Finally, the Multi-layer Perceptron (MLP) Neural Network's connection weights are optimized by the proposed ASSOA algorithm (using the selected features) to classify input cases. A Kaggle chest X-ray images (Pneumonia) dataset consists of 5,863 X-rays is employed in the experiments. The proposed ASSOA algorithm is compared with the basic Squirrel Search (SS) optimization algorithm, Grey Wolf Optimizer (GWO), and Genetic Algorithm (GA) for feature selection to validate its efficiency. The proposed (ASSOA + MLP) is also compared with other classifiers, based on (SS + MLP), (GWO + MLP), and (GA + MLP), in performance metrics. The proposed (ASSOA + MLP) algorithm achieved a classification mean accuracy of (99.26%). The ASSOA + MLP algorithm also achieved a classification mean accuracy of (99.7%) for a chest X-ray COVID-19 dataset tested from GitHub. The results and statistical tests demonstrate the high effectiveness of the proposed method in determining the infected cases.
+AU  - El-Kenawy, El Sayed M.
+AU  - Mirjalili, Seyedali
+AU  - Ibrahim, Abdelhameed
+AU  - Alrahmawy, Mohammed
+AU  - El-Said, M.
+AU  - Zaki, Rokaia M.
+AU  - Eid, Marwa Metwally
+DO  - 10.1109/ACCESS.2021.3061058
+KW  - Chest X-ray
+KW  - convolutional neural network
+KW  - multilayer perceptron
+KW  - optimization algorithm
+KW  - squirrel search optimization
+KW  - transfer learning
+PB  - Institute of Electrical and Electronics Engineers Inc.
+PY  - 2021
+SP  - 36019
+EP  - 36037
+TI  - Advanced meta-heuristics, convolutional neural networks, and feature selectors for efficient COVID-19 X-ray chest image classification
+T2  - IEEE Access
+VL  - 9
+ER  -
+TY  - JOUR
+AB  - The novel coronavirus termed as covid-19 has taken the world by its crutches affecting innumerable lives with devastating impact on the global economy and public health. One of the major ways to control the spread of this disease is identification in the initial stage, so that isolation and treatment could be initiated. Due to the lack of automated auxiliary diagnostic medical tools, availability of lesser sensitivity testing kits, and limited availability of healthcare professionals, the pandemic has spread like wildfire across the world. Certain recent findings state that chest X-ray scans contain salient information regarding the onset of the virus, the information can be analyzed so that the diagnosis and treatment can be initiated at an earlier stage. This is where artificial intelligence meets the diagnostic capabilities of experienced clinicians. The objective of the proposed research is to contribute towards fighting the global pandemic by developing an automated image analysis module for identifying covid-19 affected chest X-ray scans by employing an optimized Convolution Neural Network (CNN) model. The aforementioned objective is achieved in the following manner by developing three classification models, (i) ensemble of ResNet 50-Error Correcting Output Code (ECOC) model, (ii) CNN optimized using Grey Wolf Optimizer (GWO) and, (iii) CNN optimized using Whale Optimization + BAT algorithm. The novelty of the proposed method lies in the automatic tuning of hyper parameters considering a hierarchy of MultiLayer Perceptron (MLP), feature extraction, and optimization ensemble. A 100% classification accuracy was obtained in classifying covid-19 images. Classification accuracy of 98.8% and 96% were obtained for dataset 1 and dataset 2 respectively for classification into covid-19, normal, and viral pneumonia cases. The proposed method can be adopted in a clinical setting for assisting radiologists and it can also be employed in remote areas to facilitate the faster screening of affected patients.
+AU  - Pathan, Sameena
+AU  - Siddalingaswamy, P. C.
+AU  - Ali, Tanweer
+DA  - 2021/6//
+DO  - 10.1016/j.asoc.2021.107238
+KW  - CNN
+KW  - Covid-19
+KW  - ECOC
+KW  - Ensemble
+KW  - GWO
+KW  - SVM
+KW  - WOA
+PB  - Elsevier Ltd
+PY  - 2021
+TI  - Automated Detection of Covid-19 from Chest X-ray scans using an optimized CNN architecture
+T2  - Applied Soft Computing
+VL  - 104
+ER  -
+TY  - JOUR
+AB  - The global spread of the Coronavirus has caused a disastrous effect, affecting millions of people and making it crucial to take action. Numerous experts have worked extensively to create viable vaccines in the fight against this infectious disease. The current study offers hope by suggesting a deep learning model, Deep CP-CXR, for determining patients with Covid-19 and pneumonia. Our study encompasses two significant investigations. First, we used images from chest X-rays for binary classification to distinguish Covid-19-diagnosed patients from normal patients. Second, using chest X-ray images, we expanded the study to include several groups, such as pneumonia, Covid-19, and normal instances. The results of our studies were extremely promising. The binary classification achieved a remarkable average accuracy of 100%, allowing for accurate classification between Covid-19 patients and normal cases. In addition, the multiple-category classification was able to distinguish between Covid-19, pneumonia, and normal individuals with a remarkable average accuracy of 98.57%. These astounding findings lead us to conclude that the Deep CP-CXR method we’ve suggested for classifying Covid-19 and pneumonia patients enables medical professionals to perform it accurately. Healthcare providers worldwide will benefit significantly from this development since it has the potential to enhance both the detection and treatment of these ailments. The proposed deep learning approach improves the speed and precision in classifying the disease with which doctors can diagnose and treat their patients effectively.
+AU  - Singh, Kuljeet
+AU  - Gaur, Anubha
+AU  - Kumar, Sachin
+AU  - Shastri, Sourabh
+AU  - Mansotra, Vibhakar
+DO  - 10.1007/s40745-025-00601-3
+KW  - Chest X-ray
+KW  - Classification
+KW  - Covid-19
+KW  - Deep learning
+KW  - Pneumonia
+PB  - Springer Science and Business Media Deutschland GmbH
+PY  - 2025
+TI  - Deep CP-CXR: A Deep Learning Model for Classification of Covid-19 and Pneumonia Disease Using Chest X-Ray Images
+T2  - Annals of Data Science
+ER  -
+TY  - JOUR
+AB  - The timely identification of COVID-19 is essential to mitigate elevated mortality rates and prevent the future proliferation of the pandemic. Diagnostic test kits identify the illness; however, they often require considerable time and may present challenges regarding accuracy. Chest computed tomography (CT) testing demonstrates greater accuracy and can also serve as a diagnostic tool for COVID-19. This empirical investigation utilizes a three-step innovative and highly effective hybrid methodology that integrates image processing, soft computing, and machine learning techniques to detect COVID-19 from chest CT scans. Following the pre-processing of the chest CT images, we proceeded to extract 213 features categorized into various classes. During the second phase, the selection of the most informative features essential for prediction was conducted utilizing three soft computing algorithms: the grey wolf optimization algorithm (GWO), the salp swarm-based optimization algorithm (SSA), and a proposed hybrid approach combining both algorithms. Leveraging the features identified through soft computing algorithms, the five benchmark machine learning models were trained and utilized to classify these CT images into COVID-19 and non-COVID categories based on the chosen feature set. We undertook comprehensive testing involving 24 distinct tests (utilizing both 5-fold and 10-fold cross-validation approach). For each test, we evaluated performance across nine different standard metrics. The proposed model underwent evaluation using a publicly available CT dataset, achieving an impressive AUC of 0.9999 and a notable maximum accuracy rate of 96.90%. The findings from the experiments indicate that the suggested prediction approach surpasses other contemporary leading techniques. Expert radiologists facing heavy workloads may find the results of the proposed medical decision support framework beneficial as an additional perspective. The proposed solution is also particularly beneficial in areas experiencing a dearth of experienced medical practitioners. Additionally, we expect the suggested clinical decision system to be generalizable, and by choosing the most influential features for predictions of other human diseases, the same performance might be replicated on other datasets of human diseases.
+AU  - Singh, Law Kumar
+AU  - Khanna, Munish
+AU  - Yadav, Amit
+AU  - singh, Rekha
+DA  - 2026/12//
+DO  - 10.1007/s13721-026-00786-4
+IS  - 1
+KW  - COVID-19 detection
+KW  - Feature extraction
+KW  - Feature selection
+KW  - Grey wolf optimization algorithm
+KW  - Hybrid model
+KW  - Salp swarm optimization algorithm
+PB  - Springer
+PY  - 2026
+TI  - A hybrid feature selection framework collaborating image processing, evolutionary intelligence, and machine learning for covid-19 disease classification
+T2  - Network Modeling Analysis in Health Informatics and Bioinformatics
+VL  - 15
+ER  -
+TY  - CONF
+AB  - This paper compares two image enhancement techniques with five convolutional neural network (CNN) models to classify Covid-19 chest x-ray images. a contrast limited adaptive histogram (CLAHE) and gamma correction which is method to improve image histogram are compared with the original chest x-ray image. We use five publicly available pre-trained CNN models to detect COVID-19: MobileNet, MobileNetV2, DenseNet169, DenseNet201, and ResNet50V2. Our procedure was validated using the COVID-19 radiography database, which is a freely accessible resource. MoblileNet with gamma correction is well-suited for COVIC-19 classification, achieving an accuracy score of 87.53 percent on the first epoch and 95.46 percent after training 100 epochs with the shortest computation time.
+AU  - Kanjanasurat, Isoon
+AU  - Domepananakorn, Nontacha
+AU  - Archevapanich, Tuanjai
+AU  - Purahong, Boonchana
+DO  - 10.1109/ICEAST55249.2022.9826319
+KW  - CLAHE
+KW  - COVID-19
+KW  - Convolutional Neural Network
+KW  - Image enhancement
+PB  - Institute of Electrical and Electronics Engineers Inc.
+PY  - 2022
+SN  - 9781665459198
+SP  - 6
+EP  - 9
+TI  - Comparison of image enhancement techniques and CNN models for COVID-19 classification using chest x-rays images
+T2  - 8th International Conference on Engineering, Applied Sciences, and Technology, ICEAST 2022 - Proceedings
+ER  -
+TY  - JOUR
+AB  - Deep learning methods have significantly improved medical image analysis, particularly in detecting COVID-19 chest X-rays. Nonetheless, these methodologies frequently inhibit some drawbacks, such as limited interpretability, extensive computational resources, and the need for extensive datasets. To tackle these issues, we introduced two novel algorithms: the Dynamic Co-Occurrence Grey Level Matrix (DC-GLM) and the Contextual Adaptation Multiscale Gabor Network (CAMSGNeT). Ground-glass opacity, consolidation, and fibrosis are key indicators of COVID-19 that are effectively captured by DC-GLM, which is designed to adaptively respond to diverse texture sizes and orientations. It emphasizes coarse texture patterns, adeptly catching significant structural alterations in the texture of chest X-rays, enhancing diagnostic precision by documenting the spatial correlations among pixel intensities and facilitating the detection of both significant and minor irregularities. To enhance coarse feature extraction, we introduced CAMSGNeT, which emphasizes fine features via Contextual Adaptive Diffusion. In contrast to conventional multiscale Gabor filtering, CAMSGNeT improves feature extraction by modifying the diffusion process according to both gradients and local texture complexity. The Contextual Adaptation Diffusion approach adjusts the diffusion coefficient by incorporating both gradient and local variance, enabling intricate texture areas to preserve finer details while smoothing regions are diffused to decrease noise. Air bronchograms and crazy-paving patterns are maintained by this adaptive method, which enhances edge identification and texture characteristics while preserving essential tiny details. Finally, a simple optimized sequential neural network analyzes these refined features, resulting in enhanced classification accuracy. Feature importance analysis improves the model's interpretability by revealing the contributions of individual features to its decisions. Our methodology outperforms numerous state-of-the-art models, achieving 98.27% and 100% accuracy on two datasets, providing a more interpretable, precise, and resource-efficient solution for COVID-19 detection.
+AU  - Prince, Rukundo
+AU  - Niu, Zhendong
+AU  - Khan, Zahid Younas
+AU  - Chambua, James
+AU  - Yousif, Abdallah
+AU  - Patrick, Niyishaka
+AU  - Jennifer, Batamuliza
+DA  - 2025/3//
+DO  - 10.1016/j.compbiomed.2025.109659
+KW  - COVID-19
+KW  - Contextual adaptation multiscale gabor network
+KW  - Dynamic co-occurrence grey level matrix
+KW  - Feature importance
+KW  - Interpretability
+KW  - Sequential neural network
+PB  - Elsevier Ltd
+PY  - 2025
+TI  - Interpretable COVID-19 chest X-ray detection based on handcrafted feature analysis and sequential neural network
+T2  - Computers in Biology and Medicine
+VL  - 186
+ER  -

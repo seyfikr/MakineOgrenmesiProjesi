@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+X_features_densenet201* filter=lfs diff=lfs merge=lfs -text
+X_features_densenet201_pytorch_finetuned* filter=lfs diff=lfs merge=lfs -text
+X_features_efficientnet* filter=lfs diff=lfs merge=lfs -text
+X_features_resnet50* filter=lfs diff=lfs merge=lfs -text
